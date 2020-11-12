@@ -92,8 +92,8 @@ padding : 20px 35px 20px 20px;
     background-color: white;
 }
 #nav-top a:hover {
-    background-color: black;
-    color: whitesmoke;
+    background-color: cyan;
+    color: black;
     border: 1px dashed white;
     text-decoration: none;
 }
@@ -101,7 +101,7 @@ body {
     font-family: 'Tangerine';
     font-size: 1rem;
     text-align:center;
-    color:papayawhip;
+    color:purple;
     background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -115,7 +115,6 @@ body {
  
  @media only screen and (max-width:500px) {
      body {
-         background-color:darkred;
      } 
   }
  
@@ -137,7 +136,7 @@ font-size:1.25rem;
 }
 button:active {
     background-color:red;
-    color:white;
+    color:black;
     border: 1px solid whitesmoke;
 }
 
@@ -147,18 +146,16 @@ footer {
     margin-top: 2rem;
     margin-right: 0px;
     background-color: black;
-    color: white;
+    color: whitesmoke;
     text-align: center;
     width: 100%;
 }
 @media only screen and (min-width:800) {
   footer {
-      background-color:yellow ;
     }
 }
 @media only screen and (min-width:500) {
     footer {
-        background-color:orangered ;
       }
 }
 footer button {
