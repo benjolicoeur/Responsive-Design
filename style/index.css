@@ -106,7 +106,7 @@ header {
     background-color: blueviolet;
     display: flex;
     flex-wrap: wrap;
-    width: 120%;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -150,7 +150,6 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-    width: 120%;
 }
 @media only screen and (min-width:800) {
     footer {
