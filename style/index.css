@@ -56,51 +56,6 @@ table {
 * {
     font-size: 75%;
 }
-body {
-    font-family: 'Tangerine';
-    font-size: 1rem;
-    text-align:center;
-    color:papayawhip;
-    background-image: url("/images/background.jpg");
-    background-color:purple;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: bottom center;
-}
-@media only screen and (max-width:800px) {
-    body {
-        background-color:lightcoral;
-    } 
- }
- 
- @media only screen and (max-width:500px) {
-     body {
-         background-color:darkred;
-     } 
-  }
- 
-h1 {
-    font-family: 'Tangerine', monospace;
-    font-weight: 700;
-    font-size: 4rem;
-}
-h2{
-    font-size:2rem;
-}
-button {
-background-color:whitesmoke;
-color:black;
-padding: 1rem;
-border: 1.5px dashed black;
-font-family: 'Tangerine', monospace;
-font-size:1.25rem;
-}
-button:active {
-    background-color:red;
-    color:white;
-    border: 1px solid whitesmoke;
-}
 header {
     padding: 20px;
     background-color: blueviolet;
@@ -110,6 +65,22 @@ header {
     align-items: center;
     justify-content: space-evenly;
 }
+@media only screen and (max-width:800px) {
+    body {
+        background-color:lightcoral;
+        width: 100%;
+        margin: 100%;
+    } 
+ }
+ 
+ @media only screen and (max-width:500px) {
+     body {
+         background-color:darkred;
+         width:100%;
+         margin: 100%;
+     } 
+  }
+ 
 
 #header-txt {
 padding : 20px 35px 20px 20px;
@@ -118,7 +89,7 @@ padding : 20px 35px 20px 20px;
     height: 2rem;
     font-size: 1rem;
     text-align: right;
-    margin: 2rem;
+    margin: 1rem;
     width:45%;
 }
 @media only screen and (max-width:800px) {
@@ -142,10 +113,44 @@ padding : 20px 35px 20px 20px;
     border: 1px dashed white;
     text-decoration: none;
 }
+body {
+    font-family: 'Tangerine';
+    font-size: 1rem;
+    text-align:center;
+    color:papayawhip;
+    background-image: url("/images/background.jpg");
+    background-color:purple;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: bottom center;
+}
+h1 {
+    font-family: 'Tangerine', monospace;
+    font-weight: 700;
+    font-size: 4rem;
+}
+h2{
+    font-size:2rem;
+}
+button {
+background-color:whitesmoke;
+color:black;
+padding: 1rem;
+border: 1.5px dashed black;
+font-family: 'Tangerine', monospace;
+font-size:1.25rem;
+}
+button:active {
+    background-color:red;
+    color:white;
+    border: 1px solid whitesmoke;
+}
+
 footer {
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-right: 0px;
     background-color: black;
     color: white;
@@ -155,11 +160,15 @@ footer {
 @media only screen and (min-width:800) {
   footer {
       background-color:yellow ;
+      margin: 100%;
+      width: 100%;
     }
 }
 @media only screen and (min-width:500) {
     footer {
         background-color:orangered ;
+        margin: 100%;
+        width: 100%;
       }
 }
 footer button {
