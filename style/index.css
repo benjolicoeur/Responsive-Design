@@ -52,17 +52,6 @@ table {
 
 /* Site */
 
-@media only screen and (max-width:800px) {
-   body {
-       background-color:lightcoral
-   } 
-}
-
-@media only screen and (max-width:500px) {
-    body {
-        background-color:darkred
-    } 
- }
 
 * {
     font-size: 75%;
@@ -73,12 +62,24 @@ body {
     text-align:center;
     color:papayawhip;
     background-image: url("/images/background.jpg");
-    background-color:black;
+    background-color:purple;
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     background-position: bottom center;
 }
+@media only screen and (max-width:800px) {
+    body {
+        background-color:lightcoral;
+    } 
+ }
+ 
+ @media only screen and (max-width:500px) {
+     body {
+         background-color:darkred;
+     } 
+  }
+ 
 h1 {
     font-family: 'Tangerine', monospace;
     font-weight: 700;
@@ -120,6 +121,13 @@ padding : 20px 35px 20px 20px;
     margin: 2rem;
     width:45%;
 }
+@media only screen and (max-width:800px) {
+   #nav-top {
+       width: 100%;
+       text-align: center;
+   }
+
+}
 #nav-top a {
     border: 1px solid black;
     padding: .5rem;
@@ -144,7 +152,16 @@ footer {
     text-align: center;
     width: 100%;
 }
-
+@media only screen and (min-width:800) {
+    footer {
+        width:100%;
+    }
+}
+@media only screen and (min-width:500) {
+    footer {
+        width:100%;
+    }
+}
 footer button {
     margin: 2rem;
 }
@@ -204,3 +221,4 @@ footer a:hover {
 .gallery-img:hover {
     border: solid .25rem whitesmoke;
 }
+
