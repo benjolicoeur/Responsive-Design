@@ -59,6 +59,7 @@ table {
 header {
     padding: 20px;
     background-color: blueviolet;
+    color: darkorchid;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
