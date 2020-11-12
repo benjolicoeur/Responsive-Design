@@ -65,22 +65,6 @@ header {
     align-items: center;
     justify-content: space-evenly;
 }
-@media only screen and (max-width:800px) {
-    body {
-        background-color:lightcoral;
-        width: 100%;
-        margin: 100%;
-    } 
- }
- 
- @media only screen and (max-width:500px) {
-     body {
-         background-color:darkred;
-         width:100%;
-         margin: 100%;
-     } 
-  }
- 
 
 #header-txt {
 padding : 20px 35px 20px 20px;
@@ -119,12 +103,22 @@ body {
     text-align:center;
     color:papayawhip;
     background-image: url("/images/background.jpg");
-    background-color:purple;
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     background-position: bottom center;
 }
+@media only screen and (max-width:800px) {
+    body {
+    } 
+ }
+ 
+ @media only screen and (max-width:500px) {
+     body {
+         background-color:darkred;
+     } 
+  }
+ 
 h1 {
     font-family: 'Tangerine', monospace;
     font-weight: 700;
@@ -160,15 +154,11 @@ footer {
 @media only screen and (min-width:800) {
   footer {
       background-color:yellow ;
-      margin: 100%;
-      width: 100%;
     }
 }
 @media only screen and (min-width:500) {
     footer {
         background-color:orangered ;
-        margin: 100%;
-        width: 100%;
       }
 }
 footer button {
@@ -230,4 +220,3 @@ footer a:hover {
 .gallery-img:hover {
     border: solid .25rem whitesmoke;
 }
-
