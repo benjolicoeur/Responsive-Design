@@ -99,7 +99,7 @@ body {
     font-size: 1.25rem;
     text-align: center;
     color:whitesmoke;
-    background-image: url("/images/background.jpg") no-repeat center;
+    background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
