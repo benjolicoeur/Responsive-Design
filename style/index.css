@@ -106,8 +106,8 @@ body {
     background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-attachment: fixed;
-    background-position: bottom center;
+    background-attachment: scroll;
+    background-position: center;
 }
 @media only screen and (max-width:800px) {
     body {
@@ -204,7 +204,7 @@ footer a:hover {
 #gallery {
     display:flex;
     flex-flow: row wrap;
-    width: 85%;
+    width: 100%;
     justify-content: space-evenly;
     margin: auto;
 }
