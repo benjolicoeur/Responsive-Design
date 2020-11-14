@@ -57,9 +57,10 @@ table {
     font-size: 75%;
 }
 header {
-    padding: 20px;
+    width: 100%;
+    padding: 20px 0px;
     background-color: blueviolet;
-    color: darkorchid;
+    color: black;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -68,61 +69,52 @@ header {
 }
 
 #header-txt {
-padding : 20px 35px 20px 20px;
+padding : 20px 0px 20px 20px;
 }
 #nav-top {
-    height: 2rem;
+    height: 1rem;
     font-size: 1rem;
-    text-align: right;
-    margin: 1rem;
-    width:45%;
+    text-align: center;
+    margin:0 3rem 0 0rem;
+    width:40%;
 }
-@media only screen and (max-width:800px) {
-   #nav-top {
-       width: 100%;
-       text-align: center;
-   }
 
 }
 #nav-top a {
     border: 1px solid black;
     padding: .5rem;
     color: black;
-    margin-left: .75rem;
+    margin-left: 1rem;
     text-decoration: none;
-    background-color: white;
+    background-color:whitesmoke;
 }
 #nav-top a:hover {
-    background-color: cyan;
-    color: black;
+    background-color: red;
+    color:cyan;
     border: 1px dashed white;
     text-decoration: none;
 }
 body {
     font-family: 'Tangerine';
-    font-size: 1rem;
-    text-align:center;
-    color:purple;
+    font-size: 1.25rem;
+    text-align: center;
+    color:whitesmoke;
     background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom center;
 }
-@media only screen and (max-width:800px) {
-    body {
-    } 
+
+ #container {
+     max-width: 1200px;
+     margin: 0px auto;
+
  }
- 
- @media only screen and (max-width:500px) {
-     body {
-     } 
-  }
- 
 h1 {
     font-family: 'Tangerine', monospace;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 h2{
     font-size:2rem;
@@ -130,93 +122,234 @@ h2{
 button {
 background-color:whitesmoke;
 color:black;
-padding: 1rem;
-border: 1.5px dashed black;
+padding: .5rem;
+border: 1px dashed black;
 font-family: 'Tangerine', monospace;
 font-size:1.25rem;
 }
+
 button:active {
     background-color:red;
-    color:black;
+    color:cyan;
     border: 1px solid whitesmoke;
 }
 
 footer {
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-right: 0px;
     background-color: black;
     color: whitesmoke;
     text-align: center;
     width: 100%;
+    overflow: hidden;
 }
-@media only screen and (min-width:800) {
-  footer {
-    }
-}
-@media only screen and (min-width:500) {
-    footer {
-      }
-}
+
 footer button {
     margin: 2rem;
 }
 footer a {
-    color: whitesmoke
+    color: whitesmoke;
+    padding: 0px .2rem;
 }
 footer a:hover {
     color:black;
+    background-color: whitesmoke;
 }
 #links {
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 #about {
-    padding:1.75rem;
+    width: 60%;
+    padding:1.5rem;
     border-radius: 50px;
     background: rgba(red, green, blue, alpha);
     width: 60%;
-    margin: 60px auto;
+    margin: 2rem auto 2rem auto;
     display: flex;
     flex-wrap: wrap;
 }
 #about-img {
-    flex:35%;
+    flex:40%;
     margin: auto;
+    padding-right: 1rem;
 }
 #about-img img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
+    border: 2px solid whitesmoke;
 }
 #about-txt {
     flex: 50%;
     margin: auto;
     font-size: 1.25rem;
+    padding-left:1rem;
 }
 #about-txt p {
-    line-height: 1.50rem;
+    line-height: 1.75rem;
 }
 #about button {
-    margin: 2rem;
+    margin: 2.5rem 0 2.5rem 0;
 }
 #gallery {
     display:flex;
     flex-flow: row wrap;
-    width: 100%;
+    width: 95%;
     justify-content: space-evenly;
     margin: auto;
 }
 .gallery-img {
-    width:100%;
+    width:30%;
     height: auto;
-    max-width: 400px;
+    max-width: 450px;
+    min-width: 350px;
     margin-top: 2rem;
     margin: .5rem;
-    height: auto;
+    padding: .5rem;
     border: solid .25rem black;
 }
-.gallery-img:hover {
+.gallery-img img {
+    width: 98%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: dashed .25rem red;
+}
+.gallery-img img:hover {
     border: solid .25rem whitesmoke;
+}
+.gallery-txt {
+    background-color: black;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    padding: .75rem 0;
+}
+.gallery-txt a {
+    font-size: 1.2rem;
+    color:whitesmoke;
+}
+.gallery-txt a:hover {
+    text-decoration:none;
+}
+
+/* 800px */
+
+@media screen and (max-width:800px) {
+    #container {
+        max-width: 750px;
+    }
+    header {
+        background-color: transparent;
+        padding: 2rem 0rem;
+    }
+    #header-txt {
+        padding: 0px;
+        text-align:center;
+        width: 50%;
+        margin: 1rem auto;
+    }
+    #nav-top {
+        width: 100%;
+        height: 2rem;
+        margin: 0 auto 2rem auto;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    #nav-top a {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 50%;
+    }
+
+    #about {
+        width: 80%;
+    }
+
+    #about-img {
+        padding-right: .5rem;
+    }
+
+    #about-txt {
+        margin-top: 1.5rem;
+        padding-left: .5rem;
+    }
+
+    #about-txt p {
+        line-height: 1.5rem;
+    }
+
+    #about button {
+        margin: 1rem 0 1rem 0;
+    }
+
+    .gallery-img {
+        width: 45%;
+        padding: .25rem;
+    }
+}
+@media screen and (max-width: 500px) {
+
+    #container {
+        max-width: 500px;
+    }
+
+    h1 {
+        font-family: 'Courier Prime', monospace;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    #header-txt {
+        padding: 20px 0px 20px 0px;
+        margin: auto;
+        width: 90%;
+    }
+    
+    #nav-top {
+        margin: 0 auto 3rem auto;
+    }
+    
+    #nav-top a {
+        width: 75%;
+        margin: auto;
+    }
+
+    #about {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    #about-img {
+        flex: 100%;
+        margin: auto;
+        padding-top: 1rem;
+        padding-right: 0;
+    }
+    
+    #about-img img {
+        width: 40%;
+        height: 40%;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+    
+    #about-txt {
+        flex: 100%;
+        margin: 1rem auto;
+        font-size: 1.25rem;
+        padding-left: 0rem;
+    }
+
+    .gallery-img {
+        width: 100%;
+        padding: .5rem .25rem;
+        max-width: 350px;
+    }
 }

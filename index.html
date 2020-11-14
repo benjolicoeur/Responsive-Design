@@ -6,8 +6,7 @@
     <title>Ben Jolicoeur</title>
 
     <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,44 +15,84 @@
         </div>
 
         <nav id="nav-top">
-            <ul>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="projects.html">Projects</a>
-            </ul>
         </nav>
     </header>
 
+    <div id="container">
     <section id="about">
         <div id="about-img">
             <img src="images/me.jpg">
         </div>
 
         <div id="about-txt">
-            <h2 style="font-size:5vw">Hello I am Ben Jolicoeur</h2>
-            <button>Projects</button>
-            <p style="font-size:2.5vw">Im a father and musician. now adding web dev to my arsenal</p>
+            <h2 style="font-size:5vw">Hello I am Benjamin Jolicoeur</h2>
+            <button onclick="window.location.href='/projects.html'">Projects</button>
+            <p style="font-size:3vw">I'm a full stack web developer, a father and a musician.</p>
 
         </div>
 
     </section>
     
     <section id="gallery">
-        <div><img src="images/1.jpg" alt="1" class="gallery-img"></div>
-        <div><img src="images/2.jpg" alt="2" class="gallery-img"></div>
-        <div><img src="images/3.jpg" alt="3" class="gallery-img"></div>
-        <div><img src="images/4.jpg" alt="4" class="gallery-img"></div>
-        <div><img src="images/5.jpg" alt="5" class="gallery-img"></div>
-        <div><img src="images/7.jpg" alt="7" class="gallery-img"></div>
-        <div><img src="images/6.png" alt="6" class="gallery-img"></div>
-    </section>
+        <div class="gallery-img">
+            <img src="images/1.jpg" alt="Rally">
+        <p class="gallery-txt">
+            Rally
+        </p>
+    </div>
 
+        <div class="gallery-img">
+            <img src="images/2.jpg" alt="filler1" >
+            <p class="gallery-txt">
+                Filler1
+            </p>
+        </div>
+
+        <div class="gallery-img">
+            <img src="images/3.jpg" alt="Norcal Life" >
+            <p class="gallery-txt">
+                Norcal Life
+            </p>
+        </div>
+
+        <div class="gallery-img">
+            <img src="images/4.jpg" alt="guap" >
+        <p class="gallery-txt">
+            guap
+        </p>
+        </div>
+
+        <div class="gallery-img">
+            <img src="images/5.jpg" alt="guitar" >
+        <p class="gallery-txt">
+            guitar
+        </p>
+        </div>
+
+        <div class="gallery-img">
+            <img src="images/7.jpg" alt="web" >
+        <p class="gallery-txt">
+            web
+        </p>
+        </div>
+
+        <div class="gallery-img">
+            <img src="images/6.png" alt="filler2" >
+        <p class="gallery-txt">
+            filler2
+        </p>
+        </div>
+    </section>
+</div>
     <footer>
         <p style="font-size:10vw">Where I'm at</p>
-        <button>Contact</button>
+        <button onclick="window.location.href='/contact.html'">Contact</button>
         <section id="links">
-            <p style="font-size:2.5vw"> Social Media </p>
+            <p style="font-size:3vw"> Social Media </p>
             <a href="https://www.linkedin.com/in/benjamin-jolicoeur-b44ab11b9/">Linkedin</a>
             <a href="https://github.com/benjolicoeur">Github</a>
         </section>
