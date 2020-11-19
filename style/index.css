@@ -90,7 +90,6 @@ header {
 .hero {
     flex: 1 1 auto;
     min-height: 700px;
-    background-image: linear-gradient(to bottom right, #292c40, #121428);
     display: flex;
     justify-content: center;
     align-items: center;
