@@ -98,17 +98,7 @@ header {
     position: relative;
     border-radius: 0 0 50px 50px;
 }
-.hero::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 480px;
-    background: url('../images/background.jpg') no-repeat center;
-    background-size: cover;
-}
+
 .hero .content {
     display: flex;
     flex-flow: column nowrap;
