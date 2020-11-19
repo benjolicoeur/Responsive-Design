@@ -4,98 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ben Jolicoeur</title>
-
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="wrapper">
     <header>
-        <div id="header-txt">
-            <h1 style="font-size:10vw">Benjamin Jolicoeur</h1>
-        </div>
-
-        <nav id="nav-top">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="projects.html">Projects</a>
-        </nav>
-    </header>
-
-    <div id="container">
-    <section id="about">
-        <div id="about-img">
-            <img src="images/me.jpg">
-        </div>
-
-        <div id="about-txt">
-            <h2 style="font-size:5vw">Hello I am Benjamin Jolicoeur</h2>
-            <button onclick="window.location.href='/projects.html'">Projects</button>
-            <p style="font-size:3vw">I'm a full stack web developer, a father and a musician.</p>
-
-        </div>
-
-    </section>
-    
-    <section id="gallery">
-        <div class="gallery-img">
-            <img src="images/1.jpg" alt="Rally">
-        <p class="gallery-txt">
-            Rally
-        </p>
+        <div class ="top-bar">
+        <div class="container">
+            <div class="logo">
+                <a href=./index.html><img src="img/me.jpg" alt="me"><span>Ben Jolicoeur</span></a>
+                </div>
+                <nav class="primary-nav">
+                    <button class="toggle-menu" aria label="Open Navigation"><i class="fas fa-bars" aria-hidden="true"></i></button>
+                    <button class="close-menu" aria-label="Close Navigation"><i class="fas fa-times" aria-hidden="true"></i></button>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                    </ul>
+                </nav>
+             </div>
+         </div>
+<div class="hero">
+    <div class="content">
+        <h1> Ben Jolicoeur</h1>
+        <h2> Full-Stack Web Developer, Father, Musician </h2>
+        <a href="./projects.html" class="button"><span>My Projects</span></a>
     </div>
-
-        <div class="gallery-img">
-            <img src="images/2.jpg" alt="filler1" >
-            <p class="gallery-txt">
-                Filler1
-            </p>
-        </div>
-
-        <div class="gallery-img">
-            <img src="images/3.jpg" alt="Norcal Life" >
-            <p class="gallery-txt">
-                Norcal Life
-            </p>
-        </div>
-
-        <div class="gallery-img">
-            <img src="images/4.jpg" alt="guap" >
-        <p class="gallery-txt">
-            guap
-        </p>
-        </div>
-
-        <div class="gallery-img">
-            <img src="images/5.jpg" alt="guitar" >
-        <p class="gallery-txt">
-            guitar
-        </p>
-        </div>
-
-        <div class="gallery-img">
-            <img src="images/7.jpg" alt="web" >
-        <p class="gallery-txt">
-            web
-        </p>
-        </div>
-
-        <div class="gallery-img">
-            <img src="images/6.png" alt="filler2" >
-        <p class="gallery-txt">
-            filler2
-        </p>
-        </div>
-    </section>
 </div>
-    <footer>
-        <p style="font-size:10vw">Where I'm at</p>
-        <buttononclick="window.location.href='/contact.html'">Contact</button>
-        <section id="links">
-            <p style="font-size:3vw"> Social Media </p>
-            <a href="https://www.linkedin.com/in/benjamin-jolicoeur-b44ab11b9/">Linkedin</a>
-            <a href="https://github.com/benjolicoeur">Github</a>
-        </section>
-    </footer>
-</body>
-</html>
+</header>
+<main>
+<section id="projects">
+    <div class="container">
+        <div class="Git-for-Web-Development-Project">
+            <a href="https://github.com/benjolicoeur/Git-for-Web-Development-Project" target="_blank">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>First Project</h3>
+                </div>
+            </a>
+        </div>
+        <div class="Web-Module-Project-Intro-Css">
+            <a href="https://github.com/benjolicoeur/web-module-project-intro-css" target="_blank">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>First CSS project</h3>
+                </div>
+            </a>
+        </div>
+        <div class="User-Interface-II">
+            <a href="https://github.com/benjolicoeur/User-Interface-II" target="_blank">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>First User Interface Project/h3>
+                </div>
+            </a>
+        </div>
+        <div class="Responsive-Design">
+            <a href="https://github.com/benjolicoeur/Responsive-Design" target="_blank">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Responsive Design Project</h3>
+                </div>
+            </a>
+        </div>
+        <div class="Sprint-Challenge">
+            <a href="https://github.com/benjolicoeur/web-Sprint-Challenge-User-Interface-and-Git" target="_blank">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>First Sprint Project</h3>
+                </div>
+            </a>
+        </div>
+        <div class="Introduction-to-JavaScript">
+            <a href="https://github.com/benjolicoeur/Introduction-to-JavaScript" target="_blank">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>First Javascript Project</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+<a href="./contact.html" class="button"><span>Find Me Here</span></a>
+</footer>
+</div>
+<script src="js/main.js"> </script>
